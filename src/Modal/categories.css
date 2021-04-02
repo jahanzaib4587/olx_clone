@@ -1,0 +1,19 @@
+.show-grid a {
+  /* text-decoration: none; */
+  color: black;
+  font-size: 12px;
+}
+.show-grid a:hover {
+  color: rgb(116, 193, 212) !important;
+  cursor: pointer;
+}
+
+.show-grid h6:hover {
+  color: rgb(116, 193, 212) !important;
+  cursor: pointer;
+}
+.show-grid h6 {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}

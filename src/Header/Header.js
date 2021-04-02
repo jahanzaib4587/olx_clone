@@ -2,11 +2,12 @@ import React from "react";
 import "./header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import  {Button} from "@material-ui/core";
-import AddIcon from '@material-ui/icons/Add';
+import { Button } from "@material-ui/core";
+import AddIcon from "@material-ui/icons/Add";
+import { StickyContainer, Sticky } from "react-sticky";
 function Header() {
   return (
-    <div className="header">
+    <nav className="header col-lg-12 col-md-12 col-sm-12 container-fluid">
       <div className="header__logo">
         <p>OLX</p>
       </div>
@@ -21,19 +22,20 @@ function Header() {
           type="text"
           placeholder="Find Cars, Mobile Phones and more..."
         ></input>
-      <SearchIcon className="header__searchI"/>
+        <SearchIcon className="headeR__searchI" />
       </div>
-      
+
       <div className="header__buttons">
-        
-            <a>Login</a>
-            <Button   >
-            <AddIcon/>
-                SELL
-            </Button>
-        
+        <a>Login</a>
+        <Button>
+          <AddIcon />
+          SELL
+        </Button>
       </div>
-    </div>
+    </nav>
+    //     )}
+    //   </Sticky>
+    // </StickyContainer>
   );
 }
 

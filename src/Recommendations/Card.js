@@ -1,23 +1,45 @@
-import React from 'react'
+import React, { useState } from "react";
 import "./card.css";
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+// import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 function Card(props) {
-    return (
-        <div>
-         <div className="Card1">
-        <div className="Card_top">
-        <img height="200px" width="220px" src={props.url}></img>
-        <FavoriteBorderIcon className="heart_icon"></FavoriteBorderIcon>
+  const [change1, setChange] = useState("#BFBFBF");
+  console.log(change1);
+  const like = () => {
+    setChange("red");
+    console.log(change1);
+  };
+  const dislike = () => {
+    setChange("#BFBFBF");
+  };
+  return (
+    <div className="col-md-3 col-lg-3 col-sm-12">
+      <div className="Card1 container">
+        <div className="row justify-content-center">
+          <img
+            className="Card_img mr-2"
+            height="200vh"
+            width="220vw"
+            src={props.url}
+          ></img>
+          <FavoriteIcon
+            className="heart1_icon mt-5 "
+            style={{ color: change1 }}
+            onClick={like}
+            onDoubleClick={dislike}
+          ></FavoriteIcon>
         </div>
-            <div className="Card_detail">
-            <h4>Rs {props.price}</h4>
-            <p>{props.description}</p>
-            <h6 className="Card_time">{props.time}</h6>
-            </div>
-       </div>
+        <div className="Card_bottom">
+          <h4>Rs {props.price}</h4>
+          <p>{props.description}</p>
         </div>
-    )
+        <h6 className="Card1_time row justify-content-end p-2 mr-2">
+          {props.time}
+        </h6>
+      </div>
+    </div>
+  );
 }
 
-export default Card
+export default Card;
