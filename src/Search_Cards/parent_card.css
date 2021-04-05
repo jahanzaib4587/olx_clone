@@ -1,6 +1,6 @@
 .parent_card {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 .main_div {
   display: flex;
@@ -12,4 +12,9 @@
   background-color: #ebeeef;
   height: 10%;
   padding: 10px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }

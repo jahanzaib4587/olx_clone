@@ -14,7 +14,7 @@ function Card(props) {
     setChange("#BFBFBF");
   };
   return (
-    <div className="col-md-3 col-lg-3 col-sm-12">
+    <div className="col-md-3 col-lg-3 col-sm-12 ">
       <div className="Card1 container">
         <div className="row justify-content-center">
           <img

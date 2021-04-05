@@ -5,27 +5,44 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Button } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import { StickyContainer, Sticky } from "react-sticky";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 function Header() {
   return (
-    <nav className="header col-lg-12 col-md-12 col-sm-12 container-fluid">
+    <nav className="header row justify-content-center">
       <div className="header__logo">
-        <p>OLX</p>
+        <Router>
+          <Route>
+            <Link to="/">
+              <p className="mr-2 mt-3">OLX</p>
+            </Link>
+          </Route>
+        </Router>
       </div>
-      <div className="header__input1">
-        <SearchIcon />
-        <input type="text" placeholder="Search city, area or loc..."></input>
-        <ExpandMoreIcon />
+      <div className="header__input1 mr-4 col-lg-3  col-md-5 ">
+        <div className=" row justify-content-between mr-1 ml-1 ">
+          <SearchIcon />
+          <input
+            overflow="hidden"
+            type="text"
+            placeholder="Search city, area or loc..."
+          ></input>
+          <ExpandMoreIcon />
+        </div>
       </div>
 
-      <div className="header__input2 header__searchI">
-        <input
-          type="text"
-          placeholder="Find Cars, Mobile Phones and more..."
-        ></input>
-        <SearchIcon className="headeR__searchI" />
+      <div className="header__input2 header__searchI  col-lg-5 col-md-5 ">
+        <div className="row justify-content-between  m-1 ">
+          <input
+            className="col-lg-6 col-md-8"
+            type="text"
+            placeholder="Find Cars, Mobile Phones and more..."
+          ></input>
+          <SearchIcon className="headeR__searchI" />
+        </div>
       </div>
 
-      <div className="header__buttons">
+      <div className="header__buttons col-lg-2 col-md-3 ">
         <a>Login</a>
         <Button>
           <AddIcon />

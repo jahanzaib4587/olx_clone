@@ -1,0 +1,17 @@
+.posted_card {
+  border: 1px solid black;
+
+  padding: 10px;
+}
+h3 {
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #002f34;
+}
+.posted_map {
+  border-radius: 8px;
+  height: 150px;
+  border: none;
+}

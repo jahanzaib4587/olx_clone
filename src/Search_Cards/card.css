@@ -1,24 +1,29 @@
 .Card {
-  margin: 10px;
+  margin: 5px;
   background-color: white;
-  cursor: pointer;
+  /* cursor: pointer; */
+  min-width: 20vw;
+  text-decoration: none !important;
 }
 
-/* .heart_icon {
-  margin-bottom: 20%;
-} */
+.heart_icon {
+  cursor: pointer;
+}
 .Card h4 {
   font-weight: 600;
+  color: black;
 }
 .Card_img {
-  margin-top: 20px;
+  box-sizing: unset !important;
+  margin-top: 10px;
   object-fit: contain;
   max-width: 200px;
-  max-height: 200px;
+  min-height: 200px;
+  cursor: pointer;
 }
 .Card_bottom {
   margin-top: 20px;
-  padding: 5px;
+  padding: 3px;
   border-left: 5px solid rgb(235, 235, 76);
 }
 
@@ -26,6 +31,7 @@
   font-size: smaller;
   color: #002f34a3;
 }
+
 .Card1_time {
   margin-top: 20px;
 

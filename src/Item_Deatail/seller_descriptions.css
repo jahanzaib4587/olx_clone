@@ -1,0 +1,49 @@
+.card_icon {
+  font-size: 50px !important;
+
+  cursor: pointer !important;
+}
+.Card2 {
+  border: 1px solid black;
+  width: 25vw;
+}
+.MuiSvgIcon-root {
+  cursor: pointer;
+}
+.description_heading {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #002f34;
+  font-weight: 400;
+  padding: 0;
+}
+.description_name {
+  font-size: 16px;
+  color: #002f34;
+  display: block;
+  padding-right: 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.description_date {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500 !important;
+  color: black;
+}
+.btn {
+  background-color: #002f34 !important;
+  color: white !important;
+  font-size: 14px;
+  height: 40px;
+  text-align: center;
+  padding: 0 !important;
+  border: 5px solid transparent;
+}
+
+.btn:hover {
+  color: #002f34 !important;
+  background-color: white !important;
+  border: 5px solid #002f34 !important;
+}

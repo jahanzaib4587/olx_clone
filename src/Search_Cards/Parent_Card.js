@@ -5,7 +5,7 @@ function Parent_Card() {
   return (
     <div className="main_div">
       <h2>Based on your latest search</h2>
-      <div className="parent_card container-fluid">
+      <div className="parent_card container col-lg-12 col-md-10 row justify-content-center">
         <Card
           price="95,00"
           description="Lorem ipsum, or lipsum as it is known as"

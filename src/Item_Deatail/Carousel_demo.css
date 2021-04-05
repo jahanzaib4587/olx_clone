@@ -1,0 +1,11 @@
+img {
+  height: 65vh;
+  width: 100%;
+  object-fit: contain;
+}
+.carousel_main {
+  margin: 10px;
+
+  color: black !important;
+  background-color: black;
+}
