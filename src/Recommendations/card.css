@@ -3,6 +3,8 @@
   background-color: white;
   cursor: pointer;
   border: 2px solid #ebeeef;
+
+  min-width: 10vw;
 }
 /* .Card1:hover {
   transform: scale(1.05);
@@ -16,6 +18,7 @@
 /* .heart1_icon {
   margin-bottom: 30%;
 } */
+
 .Card h4 {
   font-weight: 600;
 }
