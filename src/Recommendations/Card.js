@@ -5,10 +5,9 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 
 function Card(props) {
   const [change1, setChange] = useState("#BFBFBF");
-  console.log(change1);
+
   const like = () => {
     setChange("red");
-    console.log(change1);
   };
   const dislike = () => {
     setChange("#BFBFBF");
