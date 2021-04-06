@@ -9,11 +9,11 @@ function Category_Component(props) {
     </a>
   ));
   return (
-    <div className="col-lg-3 mb-3">
+    <div className="col-lg-3 col-md-6  mb-3">
       <h6>{props.title}</h6>
       {loop}
     </div>
   );
 }
-// {props.sub0}
+
 export default Category_Component;
