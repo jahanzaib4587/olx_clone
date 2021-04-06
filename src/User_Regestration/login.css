@@ -1,0 +1,32 @@
+.login {
+  border: 2px solid #002f34;
+  min-width: 30vw;
+  margin-top: 100px;
+  margin-bottom: 100px !important;
+  border-radius: 20px;
+}
+h3 {
+  font-weight: 700;
+}
+label {
+  color: #002f34;
+}
+.main_div {
+  background: linear-gradient(
+    90deg,
+    rgba(164, 231, 200, 0.6068628134847689) 0%,
+    rgba(197, 235, 242, 1) 92%
+  );
+
+  box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
+  -webkit-box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
+  -moz-box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
+}
+.welcome_text {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #002f34;
+}
+.welcome_adv {
+  font-weight: 600;
+}

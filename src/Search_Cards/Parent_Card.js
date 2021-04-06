@@ -3,7 +3,7 @@ import "./parent_card.css";
 import Card from "./Card";
 function Parent_Card() {
   return (
-    <div className="main_div">
+    <div className="main_div_parent">
       <h2>Based on your latest search</h2>
       <div className="parent_card container col-lg-12 col-md-10 row justify-content-center">
         <Card

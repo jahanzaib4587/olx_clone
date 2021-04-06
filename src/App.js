@@ -7,6 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Details from "./Item_Deatail/Item_Details";
 import Home from "./Home";
+import Login from "./User_Regestration/Login";
+
+import Category_detail_page from "./Modal/Category_Details/Category_Page";
+import Banner_image from "./Header/Banner_image";
 function App() {
   return (
     <div className="App">
@@ -19,6 +23,15 @@ function App() {
             <Header />
             <Second_header />
             <Details />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+
+          <Route exact path="/category">
+            <Header />
+            <Second_header />
+            <Category_detail_page />
           </Route>
         </Switch>
       </Router>

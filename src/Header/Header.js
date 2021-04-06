@@ -6,18 +6,18 @@ import { Button } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import { StickyContainer, Sticky } from "react-sticky";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-
 function Header() {
   return (
     <nav className="header row justify-content-center">
       <div className="header__logo">
-        <Router>
-          <Route>
-            <Link to="/">
-              <p className="mr-2 mt-3">OLX</p>
-            </Link>
-          </Route>
-        </Router>
+        {/* <Router>
+          <Link to="/">
+            <p className="mr-2 mt-3">OLX</p>
+          </Link>
+        </Router> */}
+        <a href="/">
+          <p className="mr-2 mt-3">OLX</p>
+        </a>
       </div>
       <div className="header__input1 mr-4 col-lg-3  col-md-5 ">
         <div className=" row justify-content-between mr-1 ml-1 ">
@@ -43,7 +43,7 @@ function Header() {
       </div>
 
       <div className="header__buttons col-lg-2 col-md-3 ">
-        <a>Login</a>
+        <a href="/login">Login</a>
         <Button>
           <AddIcon />
           SELL

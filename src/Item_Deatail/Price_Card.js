@@ -7,7 +7,7 @@ function Price_Card() {
     <div className="Price_Card p-2 mt-3">
       <div>
         <div className="d-flex justify-content-between">
-          <h1 className="card_price">Rs 38,000</h1>
+          <h1 className="card_price">Rs 80,000</h1>
           <div>
             <FavoriteIcon className="m-2" />
             <ShareIcon />

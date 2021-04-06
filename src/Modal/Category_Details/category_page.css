@@ -1,8 +1,4 @@
-.parent_card {
-  /* display: flex;
-  flex-wrap: wrap; */
-}
-.main_div_parent {
+.main_div1 {
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
