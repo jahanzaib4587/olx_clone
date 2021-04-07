@@ -17,6 +17,7 @@ function Card(props) {
       <div className="Card1 container">
         <div className="row justify-content-center">
           <img
+            // loading="eager"
             className="Card_img mr-2"
             height="200vh"
             width="220vw"

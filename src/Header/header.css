@@ -93,3 +93,6 @@ header__buttons {
 .header__buttons Button:hover {
   background-color: "transparent";
 }
+.myblock {
+  flex: 1;
+}

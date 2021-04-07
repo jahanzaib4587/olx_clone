@@ -21,6 +21,8 @@ label {
   box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
   -webkit-box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
   -moz-box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
+  margin-top: 70px;
+  border-radius: 0px 100px 0 100px;
 }
 .welcome_text {
   font-size: 40px;
@@ -29,4 +31,7 @@ label {
 }
 .welcome_adv {
   font-weight: 600;
+}
+.signUpBtn {
+  cursor: pointer !important;
 }
