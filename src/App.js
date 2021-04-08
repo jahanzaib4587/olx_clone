@@ -4,7 +4,13 @@ import Second_header from "./Header/Second_header";
 import Parent_Card from "./Search_Cards/Parent_Card";
 import Parent_Holder from "./Recommendations/Parent_Holder";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Details from "./Item_Deatail/Item_Details";
 import Home from "./Home";
 import Login from "./User_Regestration/Login";
@@ -16,6 +22,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+          <Route exact path="/">
+            <Redirect to="/login" />
+          </Route>
           <Route exact path="/home">
             <Home></Home>
           </Route>
@@ -24,6 +33,7 @@ function App() {
             <Second_header />
             <Details />
           </Route>
+
           <Route exact path="/login">
             <Login />
           </Route>

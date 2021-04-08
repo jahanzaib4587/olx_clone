@@ -12,13 +12,17 @@ label {
   color: #002f34;
 }
 .main_div {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(164, 231, 200, 0.6068628134847689) 0%,
     rgba(197, 235, 242, 1) 92%
-  );
+  ); */
+  /* background-image: linear-gradient(to right top, #dd5e89, #e97584, #f18c84, #f5a48a, #f7bb97); */
+  boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)";
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)
+  ;
 
-  box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
+  /* box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63); */
   -webkit-box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
   -moz-box-shadow: 10px 14px 51px -32px rgba(30, 110, 230, 0.63);
   margin-top: 70px;
